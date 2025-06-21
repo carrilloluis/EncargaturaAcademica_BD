@@ -1,0 +1,25 @@
+@startuml j3
+	hide circle
+	skin rose
+	hide empty members
+	entity ActividadAcadémica {
+		*id : INTEGER
+		denominación : VARCHAR
+		fecha_inicio : DATE
+		fecha_final : DATE
+	}
+	entity Responsable {
+		*id : INTEGER
+		nombres : VARCHAR
+		apellidos : VARCHAR
+		cargo : CHAR
+	}
+	entity Encargatura {
+		*id_festividad : INTEGER
+		*id_responsable : INTEGER
+		estado : CHAR
+	}
+
+	Encargatura |o-u-|{ ActividadAcadémica
+	Encargatura |o-d-|{ Responsable
+@enduml
