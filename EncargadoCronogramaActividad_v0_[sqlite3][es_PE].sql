@@ -1,3 +1,10 @@
+/*
+@description Gestión de responsabilidades académicos/administraivas/festivas del personal académico
+@author Luis Carrillo Gutiérrez
+@date Setiembre, 2017
+@version 0.0.1
+*/
+
 DROP TABLE IF EXISTS [Actividad académica o Festividad];
 CREATE TABLE IF NOT EXISTS [Actividad académica o Festividad]
 (
